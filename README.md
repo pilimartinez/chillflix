@@ -2,6 +2,7 @@
 <h3 align="center">And I made a responsive web application called CHILLFLIX that shows the most popular movies from TheMovieDB's and allows you to filter by year.</h3>
 
 <h3 align="left">Languages and Tools:</h3>
+<p align="left"> <a href="https://www.figma.com/file/maRgqQp6x0qx4Xesm2uPdm/Untitled?node-id=0%3A1" target="_blank"></a></p>
 <p align="left"> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>, JSX and pure CSS</p>
 
 <h3 align="left">Project setup:</h3>
