@@ -3,7 +3,7 @@ import './Header.css';
 function Header() {
   return (
     <div className="header">
-      <h1 className="company-title">CHILLFLIX</h1>
+      <a href="#" className="company-title"><h1>CHILLFLIX</h1></a>
     </div>
   );
 }

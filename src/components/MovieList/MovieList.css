@@ -29,3 +29,15 @@
     margin: 0 10px 0 0;
 
 }
+
+@media screen and (min-width: 1500px) {
+    .filter-title{
+        font-size: 30px;
+    }
+    .category{
+        font-size: 35px;
+    }
+    select{
+        font-size: 30px;
+    }
+  }

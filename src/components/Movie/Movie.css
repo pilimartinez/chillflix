@@ -25,3 +25,18 @@ ul, li { margin-left: 0; padding-left: 0; text-decoration: none; list-style: non
     width: 100%;
     height: auto;
 }
+
+@media screen and (max-width: 768px) {
+    .movie-container{
+        width: 40%;
+    }
+  }
+
+@media screen and (min-width: 1500px) {
+    .title{
+        font-size: 35px;
+    }
+    .year{
+        font-size: 30px;
+    }
+  }

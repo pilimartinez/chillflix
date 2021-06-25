@@ -7,4 +7,15 @@
 .company-title{
     margin: 0 5%;
     color: #6441A5;
+    text-decoration: none;
 }
+
+h1{
+    margin: 0;
+}
+
+@media screen and (min-width: 1500px) {
+    .company-title{
+        font-size: 30px;
+    }
+  }

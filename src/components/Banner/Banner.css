@@ -25,3 +25,15 @@
     font-size: 20px;
     font-weight: normal;
 }
+
+@media screen and (min-width: 1500px) {
+    .web-subtitle{
+        font-size: 40px;
+    }
+    .web-desc{
+        font-size: 55px;
+    }
+    .banner-image {
+        height: 500px;
+    }
+  }
