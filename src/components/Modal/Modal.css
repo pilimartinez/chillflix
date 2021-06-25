@@ -1,0 +1,13 @@
+.hola {
+    font-size: 100px;
+}
+
+.visible{
+    display: flex;
+    background-color: tomato;
+    position: absolute;
+}
+
+.invisible{
+    display: none;
+}

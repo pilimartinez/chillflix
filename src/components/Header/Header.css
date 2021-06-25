@@ -1,0 +1,10 @@
+.header {
+    background-color: #F1F1F1;
+    display: flex;
+    padding: 10px;
+}
+
+.company-title{
+    margin: 0 5%;
+    color: #6441A5;
+}

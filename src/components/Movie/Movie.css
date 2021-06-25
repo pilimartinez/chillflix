@@ -1,0 +1,27 @@
+ul, li { margin-left: 0; padding-left: 0; text-decoration: none; list-style: none;}
+
+.title, .year {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #F1F1F1;
+}
+
+.year{
+    font-size: 12px;
+    color: #B9A3E3
+}
+
+.movie-container {
+    width: 20%;
+    margin: 10px;
+}
+
+.poster {
+    width: 100%;
+    height: auto;
+}
