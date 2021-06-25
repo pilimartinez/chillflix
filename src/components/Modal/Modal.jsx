@@ -11,14 +11,14 @@ function Modal({display, movie, click}) {
               <a href="#" onClick={click} className="modal-close">X</a>
           </section>
           <section className="body-modal">
+          <p className="modal-title">{movie.title}</p>
           <div className="movie-description">
-            <p className="modal-title">{movie.title}</p>
             <p className="overview">{movie.overview}</p>
-          </div> 
             <div className="movie-stads">
               <p className="stads"><strong>Rate:</strong>  {movie.vote_average}</p>
               <p className="stads"><strong>Release date:</strong>  {movie.release_date}</p>
             </div>
+          </div> 
           </section>
         </div>
     </div>

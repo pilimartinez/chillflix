@@ -14,7 +14,7 @@ h1{
     margin: 0;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
     .company-title{
         font-size: 30px;
     }

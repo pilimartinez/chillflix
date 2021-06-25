@@ -37,7 +37,7 @@ const fillYearsList = () => {
     yearList.push(i + 1)
   }
 
-  setYearsList(yearList)
+  setYearsList(yearList.reverse())
 }
 
 const selectMovie = (movie) => {
@@ -66,6 +66,7 @@ const yearChange = (value) => {
         <h3 className="category">TOP MOVIES</h3>
         <div className="filters">
           <p className="filter-title">Filter by:</p>
+            <label>Year</label>
             <select value={currentYear} onChange={(event) => yearChange(event.target.value)}>
               <option value="Any">Any</option>
               {yearsList.map((year, index) =>

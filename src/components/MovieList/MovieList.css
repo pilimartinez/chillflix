@@ -27,17 +27,22 @@
 .filter-title{
     color: #F1F1F1;
     margin: 0 10px 0 0;
-
 }
 
-@media screen and (min-width: 1500px) {
+select{
+    background-color: black;
+    color: white;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 1800px) {
     .filter-title{
         font-size: 30px;
     }
     .category{
         font-size: 35px;
     }
-    select{
+    select, label{
         font-size: 30px;
     }
   }

@@ -11,9 +11,15 @@
     background-color: rgba(0,0,0,0.4);
 }
 
+.overview{
+    overflow-y: scroll;
+    width: 50%;
+    padding-right: 10px;
+}
+
 .header-modal {
     width: 100%;
-    height: 30%;
+    height: 20%;
     padding: 0;
     overflow: hidden;
     display: flex;
@@ -22,12 +28,10 @@
 
 .body-modal {
     padding: 5%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    height: 60%;
 }
 
-.movie-stads{
+.movie-stads {
     display: flex;
     flex-direction: column;
 }
@@ -54,14 +58,14 @@
 
 .movie-description{
     display: flex;
-    flex-direction: column;
-    width: 50%;
+    justify-content: space-between;
+    height: 80%;
 }
 
-.modal-title{
+.modal-title {
     font-size: 24px;
     font-weight: bold;
-    margin: 0 0 10px 0
+    margin: 0 0 10px 0;
 }
 
 .poster-modal {
@@ -74,3 +78,47 @@
     display: none;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+::-webkit-scrollbar-track {
+    background: #F1F1F1;
+  }
+::-webkit-scrollbar-thumb {
+      background: #B9A3E3;
+  }
+::-webkit-scrollbar-thumb:hover {
+    background: #6441A5;
+  }
+
+
+@media screen and (min-width: 1800px) {
+    .movie-description{
+        font-size: 20px;
+    }
+    .modal-title{
+        font-size: 30px;
+    }
+  }
+
+@media screen and (max-width: 900px) {
+    .movie-description{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .overview{
+        width: 100%;
+        height: 50%;
+    }
+  }
+
+  @media screen and (max-width: 668px) {
+    .modal-content{
+        width: 80%;
+        height: 50%;
+    }
+    .overview{
+        width: 100%;
+        height: 50%;
+    }
+  }

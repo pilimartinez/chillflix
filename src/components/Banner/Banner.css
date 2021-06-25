@@ -26,7 +26,7 @@
     font-weight: normal;
 }
 
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1800px) {
     .web-subtitle{
         font-size: 40px;
     }
