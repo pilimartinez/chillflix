@@ -6,8 +6,8 @@ function Banner() {
     <div className="main-banner">
       <div className="banner-image"></div>
       <h2 className="web-desc">All the popular movies in one place.
-      <p className="web-subtitle">Watch anywhere. Anytime.</p>
-      </h2>      
+        <p className="web-subtitle">Watch anywhere. Anytime.</p>
+      </h2>
     </div>
   );
 }
