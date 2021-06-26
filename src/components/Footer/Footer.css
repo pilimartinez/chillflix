@@ -1,0 +1,17 @@
+footer {
+    display: flex;
+    background-color: #F1F1F1;
+    padding: 25px 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-rights{
+    color: #6441A5;
+    margin: 0 5%;
+}
+
+.linkedin{
+    font-weight: bold;
+    color: #6441A5;
+}

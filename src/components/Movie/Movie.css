@@ -19,16 +19,40 @@ ul, li { margin-left: 0; padding-left: 0; text-decoration: none; list-style: non
 .movie-container {
     width: 20%;
     margin: 10px;
+    transition: transform .4s;
+}
+
+.movie-container:hover{
+    transform: scale(1.03)
 }
 
 .poster {
     width: 100%;
     height: auto;
+    filter: brightness(80%);
+    transition: transform .4s;
+}
+
+.poster-container{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.poster:hover{
+    filter: brightness(100%);
 }
 
 @media screen and (max-width: 768px) {
     .movie-container{
         width: 40%;
+    }
+    .movie-stads{
+        margin-left: 0;
     }
   }
 

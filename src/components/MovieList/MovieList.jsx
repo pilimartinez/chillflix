@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './MovieList.css';
 import Movie from '../Movie/Movie';
 import Modal from '../Modal/Modal';
-import {getTopMovies, getYearMovies, customFetch} from '../../api';
+import { getTopMovies, getYearMovies, getMorePages } from '../../api';
 
 const fillYearsList = () => {
   const innit = 1990;
@@ -43,7 +43,7 @@ function MovieList() {
 
   const morePages = (isNext) => {
     const actualPage = isNext ? currentPage + 1 : currentPage - 1
-    customFetch(actualPage, currentYear).then((moreMovies) => setMovieList(moreMovies.results))
+    getMorePages(actualPage, currentYear).then((moreMovies) => setMovieList(moreMovies.results))
     setCurrentPage(actualPage)
   }
 
@@ -70,8 +70,10 @@ function MovieList() {
         </ul>
       </section>
       <Modal display={isModalOpen} movie={currentMovie} click={toggleModal} />
-      { currentPage != 1 ? <button onClick={() => morePages(false)}>prev</button> : ""}
-      <button onClick={() => morePages(true)}>nextpage</button>
+      <div className="page-navigation">
+        {currentPage != 1 ? <button className="page-button" onClick={() => morePages(false)}>{"< Previous"}</button> : ""}
+        <button className="page-button" onClick={() => morePages(true)}>{"Next >"}</button>
+      </div>
     </div>
   );
 }

@@ -8,6 +8,31 @@
     margin: 0 0 15px 10px;
 }
 
+.page-button{
+    border:0.16em solid rgba(255,255,255,0);
+    margin: 0 10px;
+    border-radius: 20px;
+    width: 10%;
+    padding: 10px 0;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s;
+    font-weight: bold;
+    background-color:#6441A5;
+    cursor: pointer;
+    }
+
+.page-button:hover{
+    border-color: rgba(255,255,255,1);
+}
+
+.page-navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 20px 0;
+}
+
 .movie-list {
     display: flex;
     justify-content: space-between;
@@ -44,4 +69,19 @@ select{
     select, label{
         font-size: 30px;
     }
+    .page-button{    
+        font-size: 20px;
+    }
   }
+
+@media screen and (max-width: 840px) {
+    .page-button{    
+        width: 15%;
+    }
+  }
+
+@media screen and (max-width: 840px) {
+    .page-button{    
+        width: 25%;
+    }
+}
