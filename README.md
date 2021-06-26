@@ -1,16 +1,51 @@
-<h1 align="center">Hi 👋, I'm Pilar Martinez</h1>
-<h3 align="center">And I made a responsive web application called CHILLFLIX that shows the most popular movies from TheMovieDB's and allows you to filter by year.</h3>
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://reactjs.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a>, JSX and pure CSS</p>
+# 🍿 Chillflix
 
-<h3 align="left">Project setup:</h3>
-<p align="left">- Clone the project on your computer</p>
-<p align="left">- Open the "movie-db" folder (cd movie-db)</p>
-<p align="left">- Install the dependencies (npm istall)</p>
-<p align="left">- Run the project (npm start)</p>
+A responsive web application that all shows the most popular movies from TheMovieDB's and allows you to filter by year.
 
 
+## Languages and Tools:
 
+Design:
+- [Figma](https://www.figma.com/file/maRgqQp6x0qx4Xesm2uPdm/Chillflix?node-id=0%3A1)
 
+Development:
+- React.js 
+- HTML
+- CSS
+
+  
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://github.com/pilimartinez/chillflix.git
+```
+
+Go to the project directory
+
+```bash
+  cd chillflix
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+  
+## Authors
+
+- [@PilarMartinez](http://linkedin.com/in/pilar-martinez-mon)
+
+  
 
