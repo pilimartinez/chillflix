@@ -8,10 +8,10 @@ function Modal({ display, movie, click }) {
     <div className={modalClass} key={movie.id}>
       <div className="modal-content">
         <section className="header-modal">
-          <img className="poster-modal" src={movie.poster_path !== undefined
+          <img alt="movie-poster" className="poster-modal" src={movie.poster_path !== undefined
                                         ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
                                         : defaultImage }></img>
-          <a href="javascript:void(0)" onClick={click} className="modal-close">X</a>
+          <button onClick={click} className="modal-close" arial-label="close">X</button>
         </section>
         <section className="body-modal">
           <p className="modal-title">{movie.title}</p>

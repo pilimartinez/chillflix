@@ -42,11 +42,13 @@
 }
 
 .modal-close {
-    text-decoration: none;
     color: #F1F1F1;
     position: absolute;
-    padding: 2%;
+    margin: 2%;
     font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
 }
 
 .modal-close:hover {

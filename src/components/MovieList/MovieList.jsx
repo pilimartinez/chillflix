@@ -18,6 +18,7 @@ const fillYearsList = () => {
 
 function MovieList() {
   const [movieList, setMovieList] = useState([]);
+  const [totalPages, setTotalPages] = useState();
   const [currentMovie, setCurrentMovie] = useState({});
   const [currentYear, setCurrentYear] = useState();
   const [currentPage, setCurrentPage] = useState(1);
@@ -34,10 +35,12 @@ function MovieList() {
 
   const yearChange = (value) => {
     setCurrentYear(value)
-    if (value == "Any") {
-      getTopMovies().then((movies) => setMovieList(movies.results))
+    if (value === "Any") {
+      getTopMovies().then((movies) => (setMovieList(movies.results), setTotalPages(movies.total_pages)))
+      setCurrentPage(1)
     } else {
-      getYearMovies(currentYear).then((yearMovies) => setMovieList(yearMovies.results))
+      getYearMovies(currentYear).then((yearMovies) => (setMovieList(yearMovies.results), setTotalPages(yearMovies.total_pages)))
+      setCurrentPage(1)
     }
   }
 
@@ -48,7 +51,7 @@ function MovieList() {
   }
 
   useEffect(() => {
-    getTopMovies().then((movies) => setMovieList(movies.results))
+    getTopMovies().then((movies) => (setMovieList(movies.results), setTotalPages(movies.total_pages)))
   }, []);
 
   return (
@@ -64,14 +67,15 @@ function MovieList() {
               <option key={index} value={year}>{year}</option>)}
           </select>
         </div>
-        <ul className="movie-list"> {movieList.map(movie =>
-          <Movie id={movie.id} title={movie.title} poster={movie.poster_path} year={movie.release_date} click={() => selectMovie(movie)} />
+        <ul className="movie-list"> {movieList.map((movie, index) =>
+          <Movie id={movie.id} title={movie.title} poster={movie.poster_path} key={index} year={movie.release_date} click={() => selectMovie(movie)} />
         )}
         </ul>
       </section>
       <Modal display={isModalOpen} movie={currentMovie} click={toggleModal} />
       <div className="page-navigation">
         {currentPage != 1 ? <button className="page-button" onClick={() => morePages(false)}>{"< Previous"}</button> : ""}
+        <p>{currentPage} of {totalPages}</p>
         <button className="page-button" onClick={() => morePages(true)}>{"Next >"}</button>
       </div>
     </div>
