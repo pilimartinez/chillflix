@@ -1,7 +1,7 @@
 
 # 🍿 Chillflix
 
-A responsive web application that all shows the most popular movies from TheMovieDB's and allows you to filter by year.
+A responsive web application that shows the most popular movies from TheMovieDB's and allows you to filter by year.
 
 
 ## Languages and Tools:
